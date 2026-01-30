@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanMyPlate - Meal Planner</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- Navigation Placeholder -->
+    <div id="navbar-placeholder"></div>
+
+    <div class="container py-5">
+        <div class="d-flex flex-column flex-md-row justify-content-between align-items-center mb-4">
+            <h2 class="mb-3 mb-md-0 fw-bold text-success"><i class="fas fa-calendar-alt me-2"></i>Weekly Meal Planner
+            </h2>
+            <button id="savePlanBtn" class="btn btn-primary btn-lg shadow-sm"><i class="fas fa-save me-2"></i>Save
+                Meal Plan</button>
+        </div>
+
+        <!-- Weekly Grid -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="planner-grid">
+            <!-- Cards will be generated or hardcoded here. Hardcoding for clarity as per plan -->
+            <!-- Monday -->
+            <div class="col day-card" data-day="Monday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Monday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Monday"
+                                data-type="breakfast" placeholder="Oatmeal, Eggs...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Monday"
+                                data-type="lunch" placeholder="Salad, Sandwich...">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Monday"
+                                data-type="supper" placeholder="Pasta, Stir fry...">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Monday"
+                                data-type="notes" placeholder="Prep hints..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Tuesday -->
+            <div class="col day-card" data-day="Tuesday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Tuesday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Tuesday"
+                                data-type="breakfast">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Tuesday"
+                                data-type="lunch">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Tuesday"
+                                data-type="supper">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Tuesday"
+                                data-type="notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Wednesday -->
+            <div class="col day-card" data-day="Wednesday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Wednesday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Wednesday"
+                                data-type="breakfast">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Wednesday"
+                                data-type="lunch">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Wednesday"
+                                data-type="supper">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Wednesday"
+                                data-type="notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Thursday -->
+            <div class="col day-card" data-day="Thursday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Thursday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Thursday"
+                                data-type="breakfast">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Thursday"
+                                data-type="lunch">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Thursday"
+                                data-type="supper">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Thursday"
+                                data-type="notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Friday -->
+            <div class="col day-card" data-day="Friday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Friday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Friday"
+                                data-type="breakfast">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Friday"
+                                data-type="lunch">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Friday"
+                                data-type="supper">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Friday"
+                                data-type="notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Saturday -->
+            <div class="col day-card" data-day="Saturday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Saturday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Saturday"
+                                data-type="breakfast">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Saturday"
+                                data-type="lunch">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Saturday"
+                                data-type="supper">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Saturday"
+                                data-type="notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sunday -->
+            <div class="col day-card" data-day="Sunday">
+                <div class="card h-100 shadow-sm border-0">
+                    <div class="card-header bg-transparent fw-bold text-center py-3 text-uppercase letter-spacing-1">
+                        Sunday</div>
+                    <div class="card-body">
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-coffee text-warning me-1"></i>
+                                Breakfast</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Sunday"
+                                data-type="breakfast">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-utensils text-success me-1"></i>
+                                Lunch</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Sunday"
+                                data-type="lunch">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label text-muted small"><i class="fas fa-moon text-primary me-1"></i>
+                                Supper</label>
+                            <input type="text" class="form-control form-control-sm meal-input" data-day="Sunday"
+                                data-type="supper">
+                        </div>
+                        <div class="mt-4 pt-3 border-top">
+                            <label class="form-label text-muted small"><i
+                                    class="fas fa-sticky-note text-secondary me-1"></i>
+                                Notes</label>
+                            <textarea class="form-control form-control-sm bg-light" rows="2" data-day="Sunday"
+                                data-type="notes"></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- Footer Placeholder -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/planner.js"></script>
+</body>
+
+</html>

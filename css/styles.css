@@ -1,0 +1,239 @@
+:root {
+    --primary-green: #4CAF50;
+    --primary-dark: #388E3C;
+    --accent-orange: #FF9800;
+    --accent-dark: #F57C00;
+    --bg-cream: #FFFDF5;
+    --text-dark: #2c3e50;
+    --text-light: #6c757d;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-cream);
+    color: var(--text-dark);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 600;
+    color: var(--primary-dark);
+}
+
+/* Navbar */
+.navbar-brand {
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--primary-green) !important;
+}
+
+.nav-link {
+    font-weight: 500;
+    color: var(--text-dark);
+    transition: color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--accent-orange) !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: var(--primary-green);
+    border-color: var(--primary-green);
+    font-weight: 500;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+}
+
+.btn-outline-primary {
+    color: var(--primary-green);
+    border-color: var(--primary-green);
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--primary-green);
+    color: white;
+}
+
+.btn-accent {
+    background-color: var(--accent-orange);
+    color: white;
+    font-weight: 500;
+    border: none;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-dark);
+    color: white;
+}
+
+/* Cards */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.2s;
+    background-color: white;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Hero Section */
+.hero-section {
+    padding: 4rem 0;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.1) 0%, rgba(255, 152, 0, 0.1) 100%);
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+/* Footer */
+footer {
+    background-color: #f1f1f1;
+    padding: 2rem 0;
+    margin-top: auto;
+}
+
+/* Meal Planner Grid */
+.calendar-day {
+    min-height: 150px;
+    border: 1px solid #eee;
+    padding: 10px;
+    background: white;
+}
+
+.meal-slot {
+    font-size: 0.85rem;
+    background-color: rgba(76, 175, 80, 0.1);
+    color: var(--primary-dark);
+    padding: 4px 8px;
+    border-radius: 4px;
+    margin-bottom: 4px;
+    cursor: pointer;
+}
+
+.meal-slot:hover {
+    background-color: rgba(76, 175, 80, 0.2);
+}
+
+/* Quote Slider */
+.carousel-item {
+    padding: 3rem;
+    text-align: center;
+    background-color: var(--primary-green);
+    color: white;
+    border-radius: 15px;
+}
+
+.carousel-text {
+    font-size: 1.25rem;
+    font-style: italic;
+}
+
+/* Utility */
+.text-accent {
+    color: var(--accent-orange);
+}
+
+.bg-cream {
+    background-color: var(--bg-cream);
+}
+
+/* Calculator */
+.calculator-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.calculator-modal.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.calculator-container {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 320px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    transform: translateY(20px);
+    transition: transform 0.3s ease;
+}
+
+.calculator-modal.active .calculator-container {
+    transform: translateY(0);
+}
+
+.calc-screen {
+    background: #f8f9fa;
+    border: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.btn-white {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    color: var(--text-dark);
+}
+
+.btn-white:hover {
+    background-color: #e9ecef;
+}
+
+#calc-trigger {
+    transition: transform 0.2s;
+}
+
+#calc-trigger:hover {
+    transform: rotate(15deg);
+    background-color: var(--primary-green);
+    color: white;
+}
+
+/* Meal Planner Cards */
+.letter-spacing-1 {
+    letter-spacing: 1px;
+}
+
+.day-card .card {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.day-card .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+}
+
+.meal-input {
+    border: 1px solid #e9ecef;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.meal-input:focus {
+    border-color: var(--primary-green);
+    box-shadow: 0 0 0 0.25rem rgba(76, 175, 80, 0.25);
+}

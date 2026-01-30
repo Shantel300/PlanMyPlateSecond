@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanMyPlate - Settings</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <div id="navbar-placeholder"></div>
+
+    <div class="container py-5">
+        <h2 class="mb-5">Settings & Privacy</h2>
+
+        <div class="row">
+            <div class="col-lg-8">
+
+                <!-- Preferences Form -->
+                <div class="card mb-5 border-0 shadow-sm">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-4">Dietary Preferences</h4>
+                        <form onsubmit="event.preventDefault(); alert('Settings Saved!');">
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Primary Diet</label>
+                                <select class="form-select">
+                                    <option selected>Standard (Omnivore)</option>
+                                    <option>Vegetarian</option>
+                                    <option>Vegan</option>
+                                    <option>Keto</option>
+                                    <option>Paleo</option>
+                                </select>
+                            </div>
+
+                            <div class="mb-3">
+                                <label class="form-label fw-bold">Allergies / Exclusions</label>
+                                <div class="d-flex gap-3 flex-wrap">
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gluten">
+                                        <label class="form-check-label" for="gluten">Gluten-Free</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="dairy">
+                                        <label class="form-check-label" for="dairy">Dairy-Free</label>
+                                    </div>
+                                    <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="nuts">
+                                        <label class="form-check-label" for="nuts">Nut-Free</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <hr class="my-4">
+
+                            <h4 class="card-title mb-4">App Settings</h4>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="darkMode">
+                                <label class="form-check-label" for="darkMode">Enable Dark Mode</label>
+                            </div>
+                            <div class="form-check form-switch mb-3">
+                                <input class="form-check-input" type="checkbox" id="notifications" checked>
+                                <label class="form-check-label" for="notifications">Receive Meal Reminders</label>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary mt-3">Save Changes</button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Privacy Policy -->
+                <div class="card border-0 shadow-sm bg-light">
+                    <div class="card-body p-4">
+                        <h4 class="card-title mb-3"><i class="fas fa-user-shield me-2"></i>Privacy & Data</h4>
+                        <p class="small text-muted mb-0">
+                            Your privacy is important to us. All your meal data and personal preferences are securely
+                            stored using Firebase. We do not sell your personal data to third parties. Your data is used
+                            solely to improve your meal planning experience and provide smart suggestions. You can
+                            request a copy of your data or account deletion at any time by contacting support.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
