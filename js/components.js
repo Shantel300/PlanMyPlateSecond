@@ -7,7 +7,7 @@ const navigationHTML = `
 <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
     <div class="container">
         <a class="navbar-brand" href="index.html">
-            <i class="fas fa-leaf me-2"></i>PlanMyPlate
+            <img src="images/logo.png" alt="PlanMyPlate Logo" class="navbar-logo me-2">PlanMyPlate
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
             <span class="navbar-toggler-icon"></span>
@@ -41,7 +41,7 @@ const footerHTML = `
 <footer class="text-center text-muted mt-5">
     <div class="container">
         <section class="mb-4">
-            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="https://www.facebook.com/Shantel Ndlovu" role="button"><i class="fab fa-facebook-f"></i></a>
             <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
             <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-instagram"></i></a>
             <button id="calc-trigger" class="btn btn-outline-success btn-floating m-1 rounded-circle" role="button" title="Calculator"><i class="fas fa-calculator"></i></button>

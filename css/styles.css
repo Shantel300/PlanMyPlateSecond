@@ -29,6 +29,15 @@ h6 {
     font-weight: 700;
     font-size: 1.5rem;
     color: var(--primary-green) !important;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-logo {
+    height: 50px;
+    width: auto;
+    object-fit: contain;
+    mix-blend-mode: multiply;
 }
 
 .nav-link {
