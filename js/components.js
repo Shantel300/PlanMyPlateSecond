@@ -41,9 +41,9 @@ const footerHTML = `
 <footer class="text-center text-muted mt-5">
     <div class="container">
         <section class="mb-4">
-            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="https://www.facebook.com/Shantel Ndlovu" role="button"><i class="fab fa-facebook-f"></i></a>
-            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-twitter"></i></a>
-            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="https://www.facebook.com/Shantel Ndlovu/" role="button"><i class="fab fa-facebook-f"></i></a>
+            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="https://www.linkedin.com/in/shantel ruth ndlovu-463681259?81259/" role="button"><i class="fab fa-linkedin"></i></a>
+            <a class="btn btn-outline-secondary btn-floating m-1 rounded-circle" href="https://www.instagram.com/simply_shantie/" role="button"><i class="fab fa-instagram"></i></a>
             <button id="calc-trigger" class="btn btn-outline-success btn-floating m-1 rounded-circle" role="button" title="Calculator"><i class="fas fa-calculator"></i></button>
         </section>
         <p>© 2026 PlanMyPlate by Shantel. Nourish your life.</p>
